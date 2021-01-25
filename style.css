@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+  padding: 1rem 0;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+header .container {
+  padding: .5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__logo img{
+  height: 80px;
+  width: 80px;
+}
+
+.header__logo img:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.header__personal h1{
+  font-weight: 400;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* hero styles */
+
+.hero {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__title {
+  width: 35vw;
+  font-size: 2rem;
+}
+
+.hero__skills {
+  width: 35vw;
+}
+
+.hero__skills h4 {
+  font-size: 1.5rem;
+  margin-left: 0;
+}
+
+.hero__skills ul {
+  margin: 0;
+  list-style:lower-greek;
+}
+
+.hero__skills ul li {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.projects h2 {
+  font-size: 2rem;
+}
+
+.projects ul {
+  list-style: none;
+}
+
+.projects a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: blue;
+}
+
+.projects a:hover {
+  opacity: .8;
+}
+
+.footer .container {
+  border: none;
+}
