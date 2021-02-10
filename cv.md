@@ -1,4 +1,4 @@
-# 1. Vladislav Horeho
+# 1. Vladislav Rybachonok
 ### Located in Minsk, Belarus
 
 # 2. Telegram - @jadyCat
