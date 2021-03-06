@@ -8,94 +8,76 @@ body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  padding: 3em;
+  color: #fff;
 }
 
-.container {
-  width: 80vw;
-  margin: auto;
-  padding: 1rem 0;
-  border-bottom: 1px solid #2e2e2e;
-}
-
-header .container {
-  padding: .5rem 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.header__logo img{
-  height: 80px;
-  width: 80px;
-}
-
-.header__logo img:hover {
-  opacity: .8;
-  cursor: pointer;
-}
-
-.header__personal h1{
-  font-weight: 400;
-  margin-left: 1rem;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-/* hero styles */
-
-.hero {
-  padding: 1rem;
-  margin: 1rem 0;
-}
-
-.hero .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero__title {
-  width: 35vw;
-  font-size: 2rem;
-}
-
-.hero__skills {
-  width: 35vw;
-}
-
-.hero__skills h4 {
-  font-size: 1.5rem;
-  margin-left: 0;
-}
-
-.hero__skills ul {
-  margin: 0;
-  list-style:lower-greek;
-}
-
-.hero__skills ul li {
-  font-size: 1.3rem;
-  font-weight: 300;
-}
-
-.projects h2 {
-  font-size: 2rem;
-}
-
-.projects ul {
+ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.projects a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: blue;
+.wrapper {
+  background-color: rgba(255,255,255,.3);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  overflow: hidden;
 }
 
-.projects a:hover {
-  opacity: .8;
+.resume_left {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(0,0,0,.5);
 }
 
-.footer .container {
-  border: none;
+.resume_right {
+  background-color: rgba(255,255,255, .8);
+  color: rgba(0,0,0,.8);
+  padding: 20px;
+  
+}
+
+.resume__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.resume__personal {
+  margin-bottom: 20px;
+}
+
+.resume__personal li,
+.resume__contact li {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255, .8);
+  padding: 5px 0;
+}
+
+.key {
+  width: 150px;
+}
+
+.resume__title {
+  padding: 20px 0;
+  font-size: 26px;
+  line-height: 26px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.title__profession {
+  font-size: 16px;
+}
+
+.resume__about {
+  padding: 20px 0;
+  font-size: 18px;
+  line-height: 18px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
 }
