@@ -8,94 +8,188 @@ body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  padding: 3em;
+  color: #fff;
 }
 
-.container {
-  width: 80vw;
-  margin: auto;
-  padding: 1rem 0;
-  border-bottom: 1px solid #2e2e2e;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-header .container {
-  padding: .5rem 0;
+.wrapper {
+  background-color: rgba(255,255,255,.3);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  overflow: hidden;
+}
+
+.resume_left {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  padding: 20px;
+  background-color: rgba(0,0,0,.5);
 }
 
-.header__logo img{
-  height: 80px;
-  width: 80px;
+.resume_right {
+  background-color: rgba(255,255,255, .8);
+  color: rgba(0,0,0,.8);
+  padding: 20px;
+  
 }
 
-.header__logo img:hover {
-  opacity: .8;
-  cursor: pointer;
+.resume__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  align-self: center;
 }
 
-.header__personal h1{
-  font-weight: 400;
-  margin-left: 1rem;
-  font-size: 1.5rem;
-  margin-top: 1rem;
+.resume__personal {
+  margin-bottom: 20px;
 }
 
-/* hero styles */
-
-.hero {
-  padding: 1rem;
-  margin: 1rem 0;
+.resume__personal li,
+.resume__contact li {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255, .8);
+  padding: 5px 0;
 }
 
-.hero .container {
+.key {
+  width: 150px;
+}
+
+.resume__title {
+  padding: 20px 0;
+  font-size: 26px;
+  line-height: 35px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.title__profession {
+  font-size: 16px;
+}
+
+.resume__about {
+  padding: 15px 0;
+  font-size: 18px;
+  line-height: 18px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.resume__skills {
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.resume__skills li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progressbar {
+  height: 20px;
+  width: 300px;
+  background-color: rgba(0,0,0,.8);
+  margin-left: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progressbar__container {
+  width: 50%;
+  background-color: rgba(255,255,255,.3);
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.progressbar__container.w-90 {
+  width: 90%;
+}
+.progressbar__container.w-80 {
+  width: 80%;
+}
+.progressbar__container.w-70 {
+  width: 70%;
+}
+.progressbar__container.w-60 {
+  width: 60%;
+}
+.progressbar__container.w-50 {
+  width: 50%;
+}
+.progressbar__container.w-30 {
+  width: 30%;
+}
+
+.resume__projects ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.resume__projects li {
+  height: 200px;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 10px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  transition: all .3s ease;
 }
 
-.hero__title {
-  width: 35vw;
-  font-size: 2rem;
+.resume__projects li::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.8);
+  z-index: 2;
 }
 
-.hero__skills {
-  width: 35vw;
+
+.resume__projects li:first-of-type {
+  background-image: url(https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1535&q=80) ;
+  }
+
+.resume__projects li:nth-of-type(2) {
+  background-image: url(https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80) ;
 }
 
-.hero__skills h4 {
-  font-size: 1.5rem;
-  margin-left: 0;
+.resume__projects li:nth-of-type(3) {
+  background-image: url(https://images.unsplash.com/photo-1523634921619-37ce98c1877f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80) ;
 }
 
-.hero__skills ul {
-  margin: 0;
-  list-style:lower-greek;
-}
-
-.hero__skills ul li {
-  font-size: 1.3rem;
-  font-weight: 300;
-}
-
-.projects h2 {
-  font-size: 2rem;
-}
-
-.projects ul {
-  list-style: none;
-}
-
-.projects a {
+.resume__projects li a {
+  color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
-  color: blue;
+  font-size: 25px;  
+  transition: all .3s ease;
+  opacity: 0;
 }
 
-.projects a:hover {
-  opacity: .8;
+.resume__projects li:hover a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  opacity: 1;
 }
 
-.footer .container {
-  border: none;
-}
