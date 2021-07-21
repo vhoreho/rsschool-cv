@@ -56,7 +56,6 @@ ul {
   flex-direction: column;
   padding: 20px;
   color: #fbeec1;
-  /* background-color: rgba(0,0,0,.5); */
 }
 
 .resume_right {
@@ -137,7 +136,8 @@ ul {
 }
 
 .skills__item {
-  width: 100px;
+  width: 5vw;
+  margin-right: 15px;
   opacity: .7;
   transition: all .3s ease;
 }
@@ -190,8 +190,8 @@ ul {
 
 .resume__projects ul{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 140px);
   grid-gap: 10px;
   grid-template-areas: 'one two two'
   'four four three'
