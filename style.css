@@ -41,9 +41,11 @@ ul {
   background-color: rgba(0,0,0,.7);
 }
 
+.header__title {
+  font-size: 20px;
+}
+
 .wrapper {
-  /* background-color: rgba(255,255,255,.3); */
-  /* border-radius: 10px; */
   display: grid;
   grid-template-columns: 400px 1fr;
   overflow: hidden;
@@ -79,7 +81,6 @@ ul {
 .resume__personal li,
 .resume__contact li {
   display: flex;
-  /* border-bottom: 1px solid rgba(255,255,255, .8); */
   padding: 1px 0;
 }
 
@@ -126,17 +127,18 @@ ul {
   justify-content: flex-start;
 }
 
-.resume__skills > div > ul {
-  margin-right: 30px;
+.resume__skills > ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
 }
 
 .resume__skills li {
-  display: flex;
-  justify-content: space-between;
+  margin-right: 20px;
 }
 
 .skills__item {
-  width: 5vw;
+  width: 3.5vw;
   margin-right: 15px;
   opacity: .7;
   transition: all .3s ease;
@@ -145,43 +147,6 @@ ul {
 .skills__item:hover {
   opacity: 1;
   transform: scale(1.1);
-}
-
-.progressbar {
-  height: 20px;
-  width: 300px;
-  background-color: #daad86;
-  margin-left: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.progressbar__container {
-  width: 50%;
-  background-color: #bc986a;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-}
-
-.progressbar__container.w-90 {
-  width: 90%;
-}
-.progressbar__container.w-80 {
-  width: 80%;
-}
-.progressbar__container.w-70 {
-  width: 70%;
-}
-.progressbar__container.w-60 {
-  width: 60%;
-}
-.progressbar__container.w-50 {
-  width: 50%;
-}
-.progressbar__container.w-30 {
-  width: 30%;
 }
 
 .resume__projects h2 {
