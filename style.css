@@ -280,3 +280,9 @@ ul {
 .projects__item_five {
   grid-area: five;
 }
+
+.footer,
+.header {
+  position: relative;
+  text-align: right;
+}
